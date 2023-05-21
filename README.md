@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://airtable.com/shrCb8y6eTbPKwSTL" target="_blank">
-    <img src="images/IMG_20230323_134059_927.png">
+    <img src="https://github.com/DataTalksClub/mlops-zoomcamp/blob/main/images/IMG_20230323_134059_927.png">
   </a>
 </p>
 
