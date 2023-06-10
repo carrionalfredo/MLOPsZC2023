@@ -1,0 +1,53 @@
+###
+### A complete description of a Prefect Deployment for flow 'main-flow'
+###
+name: q02
+description: The main training pipeline
+version: 333ef90bbcaa596f50c1cefdc3fda7c2
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: cohort03wp
+tags: []
+parameters: {}
+schedule:
+  cron: 0 9 3 * *
+  timezone: null
+  day_or: true
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: main-flow
+manifest_path: null
+storage: null
+path: K:\MLOPsZC2023\cohorts\03
+entrypoint: orchestrate.py:main_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    train_path:
+      title: train_path
+      default: ./data/green_tripdata_2021-01.parquet
+      position: 0
+      type: string
+    val_path:
+      title: val_path
+      default: ./data/green_tripdata_2021-02.parquet
+      position: 1
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-06-10T22:27:36.582254+00:00'
