@@ -1,4 +1,0 @@
-{
-  "main-flow": "orchestrate.py:main_flow",
-  "mainflow": "deploys\\orchestrate.py:mainflow"
-}
