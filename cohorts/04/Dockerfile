@@ -10,5 +10,3 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --system --deploy
 
 COPY ["cohort04.py", "./"]
-
-RUN python cohort04.py 2022 4
