@@ -1,0 +1,13 @@
+services:
+  s3:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+      - AWS_DEFAULT_REGION=eu-west-1
+      - AWS_ACCESS_KEY_ID=abc
+      - AWS_SECRET_ACCESS_KEY=xyz
+      - S3_ENDPOINT_URL=http://localhost:4566
+      - INPUT_FILE_PATTERN=s3://nyc-duration/in/{year:04d}-{month:02d}.parquet
+      - OUTPUT_FILE_PATTERN=s3://nyc-duration/out/{year:04d}-{month:02d}.parquet
